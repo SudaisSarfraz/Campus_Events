@@ -418,4 +418,69 @@ body {
     width: 90%;
   }
 }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 40px;
+  color: #222;
+}
+
+.events-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.event-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.event-card h2 {
+  margin: 0 0 10px;
+  color: #0056b3;
+}
+
+.event-card .date {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.event-card .desc {
+  margin: 10px 0 20px;
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0056b3;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #003d80;
+}
 
