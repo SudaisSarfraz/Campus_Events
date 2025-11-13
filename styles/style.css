@@ -194,6 +194,7 @@ body {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 /* Footer */
 .footer {
   background: #1e3a8a;
@@ -202,7 +203,103 @@ body {
   padding: 1rem 0;
   margin-top: 3rem;
 }
+/* Schedule Page */
+.schedule {
+  text-align: center;
+  padding: 4rem 2rem;
+}
 
+.schedule h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+
+.schedule p {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.schedule-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.event-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 80%;
+  max-width: 900px;
+  transition: 0.3s ease;
+  animation: fadeInUp 0.8s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.event-date {
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+  color: #fff;
+  border-radius: 12px;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+  margin-right: 1.5rem;
+  min-width: 70px;
+}
+
+.event-date h3 {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.event-date span {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.event-details h3 {
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+}
+
+.event-details p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .event-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .event-date {
+    margin-right: 0;
+  }
+}
 /* Animations */
 @keyframes fadeIn {
   from {opacity: 0; transform: translateY(20px);}
