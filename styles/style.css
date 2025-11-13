@@ -419,3 +419,77 @@ body {
   }
 }
 
+/* General About Section Styling */
+.about-section {
+  padding: 4rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  max-width: 1200px;
+  margin: auto;
+  line-height: 1.7;
+  color: #555;
+}
+
+.about-section h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.about-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 2rem;
+}
+
+.about-section p {
+  color: #555;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+/* Team Section */
+.team {
+  margin-top: 3rem;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Individual Member Card */
+.member {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.member h3 {
+  color: #222;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.member p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Highlight Team Lead */
+.member:first-child {
+  border: 2px solid #007BFF; /* Blue border */
+  background-color: #f0f8ff; /* Light blue background */
+}
+
